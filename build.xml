@@ -25,9 +25,14 @@
     <echo>testProject.jar was created in ${dist}/lib/ </echo>
   </target>
 
+<target name="pack" depends="dist" >
+  <tar destfile="${dist}/lib/testProject.tar" basedir="${dist}/lib"/>
+  <gzip destfile="${dist}/lib/testProject.tar.gz" src="${dist}/lib/testProject.tar"/>
+  <delete file="${dist}/lib/testProject.tar"/>
+</target>
 
 
-<target name="test" depends="dist">
+<target name="test" depends="pack">
   <mkdir dir="${reports}"/>
 
 <junit showoutput="yes" fork="true">
