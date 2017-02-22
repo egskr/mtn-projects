@@ -1,14 +1,14 @@
 <project name="Project" default="dist" basedir=".">
 
-  <property name="src" location="module3/ant-task/src"/>
-  <property name="build" location="build"/>
-  <property name="dist" location="dist"/>
-  <property name="lib-dir" value="module3/ant-task/lib"/>
-  <property name="reports" value="reports"/>
+  <property name="src" location="/home/egor/for_git/jenkins_ant/mtn-projects/module3/ant-task/src"/>
+  <property name="build" location="/home/egor/for_git/jenkins_ant/mtn-projects/build"/>
+  <property name="dist" location="/home/egor/for_git/jenkins_ant/mtn-projects/dist"/>
+  <property name="lib-dir" value="/home/egor/for_git/jenkins_ant/mtn-projects/module3/ant-task/lib"/>
+  <property name="reports" value="/home/egor/for_git/jenkins_ant/mtn-projects/reports"/>
 
-  <path id="classpath">
+ <path id="classpath">
         <fileset dir="${lib-dir}" includes="**/*.jar"/>
-  </path>
+    </path>
 
   <target name="init">
     <mkdir dir="${build}"/>    
@@ -33,7 +33,7 @@
 <junit showoutput="yes" fork="true">
     <classpath>
         <!-- The location of the JUnit version that you want to use -->
-        <pathelement location="module3/ant-task/lib/junit-4.11.jar"/>
+        <pathelement location="/home/egor/for_git/jenkins_ant/mtn-projects/module3/ant-task/lib/junit-4.11.jar"/>
     </classpath>
 
     <formatter type="plain" />
