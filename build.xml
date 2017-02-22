@@ -4,7 +4,7 @@
   <property name="build" location="/home/egor/for_git/jenkins_ant/mtn-projects/build"/>
   <property name="dist" location="/home/egor/for_git/jenkins_ant/mtn-projects/dist"/>
   <property name="lib-dir" value="/home/egor/for_git/jenkins_ant/mtn-projects/module3/ant-task/lib"/>
-  <property name="reports" value="/home/egor/for_git/jenkins_ant/mtn-projects/module3/ant-task/reports"/>
+  <property name="reports" value="/home/egor/for_git/jenkins_ant/mtn-projects/reports"/>
 
  <path id="classpath">
         <fileset dir="${lib-dir}" includes="**/*.jar"/>
