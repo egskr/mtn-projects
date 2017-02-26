@@ -12,6 +12,8 @@
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <timestamp>${maven.build.timestamp}</timestamp>
+    <maven.build.timestamp.format>d_MM_yyyy(HH:mm:ss)</maven.build.timestamp.format>
 </properties>
 
 <dependencies>
@@ -40,7 +42,7 @@
  			<artifactId>maven-assembly-plugin</artifactId>
       		<configuration>
        	    	<descriptor>taring.xml</descriptor>
-       			<finalName>myProj</finalName>
+                 <finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
             </configuration>
             <executions>
           	  <execution>
