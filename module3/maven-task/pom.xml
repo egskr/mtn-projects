@@ -4,7 +4,7 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mtn.training</groupId>
-    <artifactId>myProj</artifactId>
+    <artifactId>Skrabkou_Proj</artifactId>
     <packaging>jar</packaging>
     <version>V1.0</version>
     <name>Yahor_Skrabkou</name>
